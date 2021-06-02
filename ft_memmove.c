@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:42:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/18 12:07:33 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:24:57 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char	*pdfinal;
 	char	*psfinal;
 
-	pdest = (char*)dest;
-	psrc = (char*)src;
+	pdest = (char *)dest;
+	psrc = (char *)src;
 	if ((n == 0) || (dest == src))
 		return (dest);
 	if (pdest < psrc)

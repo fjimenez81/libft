@@ -6,14 +6,14 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:36:04 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/28 10:10:57 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:29:53 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-static	int		ft_contador(char const *str, char c)
+static	int	ft_contador(char const *str, char c)
 {
 	int		word_len;
 	size_t	cont;
@@ -24,16 +24,19 @@ static	int		ft_contador(char const *str, char c)
 	{
 		if (!word_len && *str != c)
 			cont++;
-		word_len = (*str == c) ? 0 : 1;
+		if (*str == c)
+			word_len = 0;
+		else
+			word_len = 1;
 		str++;
 	}
 	return (cont);
 }
 
-static	int		ft_word_len(char const *str, char c)
+static	int	ft_word_len(char const *str, char c)
 {
-	int i;
-	int len;
+	int	i;
+	int	len;
 
 	i = 0;
 	len = 0;
@@ -47,21 +50,23 @@ static	int		ft_word_len(char const *str, char c)
 	return (len);
 }
 
-char			**ft_split(const char *str, char c)
+char	**ft_split(const char *str, char c)
 {
 	int		i;
 	int		j;
 	int		k;
 	char	**s;
 
-	if (!str || !(s = (char**)malloc(sizeof(*s) * (ft_contador(str, c) + 1))))
+	s = (char **)malloc(sizeof(*s) * (ft_contador(str, c) + 1));
+	if (!str || !s)
 		return (NULL);
 	i = -1;
 	j = 0;
 	while (++i < ft_contador(str, c))
 	{
 		k = 0;
-		if (!(s[i] = ft_calloc(ft_word_len(&str[j], c) + 1, 1)))
+		s[i] = ft_calloc(ft_word_len(&str[j], c) + 1, 1);
+		if (!s[i])
 			s[i] = NULL;
 		while (str[j] == c)
 			j++;

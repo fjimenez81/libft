@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 12:56:34 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/20 10:37:17 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:15:47 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ void	*ft_calloc(size_t nitems, size_t size)
 {
 	char	*res;
 
-	if (!(res = malloc(nitems * size)))
+	res = malloc(nitems * size);
+	if (!res)
 		return (NULL);
 	ft_bzero(res, nitems * size);
-	return ((void*)res);
+	return ((void *)res);
 }

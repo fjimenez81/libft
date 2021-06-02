@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:44:18 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/20 08:58:55 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:33:36 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned char	*ps1;
 	unsigned char	*ps2;
 
-	ps1 = (unsigned char*)s1;
-	ps2 = (unsigned char*)s2;
+	ps1 = (unsigned char *)s1;
+	ps2 = (unsigned char *)s2;
 	i = 0;
 	if (n == 0)
 		return (0);

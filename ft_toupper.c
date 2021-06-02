@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:45:27 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/18 08:05:17 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:36:16 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	unsigned char ch;
+	unsigned char	ch;
 
 	if (c > 96 && c < 123)
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 19:49:48 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/01/22 13:21:56 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:19:09 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void	ft_putnbr(char *str, int nbr)
 	*str = '\0';
 }
 
-char		*ft_itoa(int nb)
+char	*ft_itoa(int nb)
 {
 	char	*str;
 	size_t	size;
@@ -58,7 +58,8 @@ char		*ft_itoa(int nb)
 	}
 	if (nb < 0)
 		++size;
-	if (!(str = (char *)malloc(sizeof(char) * (size + 1))))
+	str = (char *)malloc(sizeof(char) * (size + 1));
+	if (!str)
 		return (NULL);
 	ft_putnbr(str, nbr);
 	return (str);

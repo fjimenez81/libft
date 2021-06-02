@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:42:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/18 12:45:50 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:30:59 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char *ps;
+	char	*ps;
 
-	ps = (char*)s;
+	ps = (char *)s;
 	while (*ps != c)
 	{
 		if (*ps == '\0')

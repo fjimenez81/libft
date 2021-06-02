@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:45:18 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/13 13:45:21 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:36:11 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	unsigned char ch;
+	unsigned char	ch;
 
 	if (c > 64 && c < 91)
 	{

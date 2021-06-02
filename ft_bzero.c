@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 09:48:18 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/18 10:16:28 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:12:31 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_bzero(void *str, size_t n)
 	char	*c;
 	size_t	i;
 
-	c = (char*)str;
+	c = (char *)str;
 	i = 0;
 	while (i < n)
 	{

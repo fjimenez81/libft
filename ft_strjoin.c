@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:43:22 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/27 08:55:01 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:32:22 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	lens1 = ft_strlen(s1);
 	lens2 = ft_strlen(s2);
-	if (!(dest = ft_calloc((lens1 + lens2) + 1, 1)))
+	dest = ft_calloc((lens1 + lens2) + 1, 1);
+	if (!dest)
 		return (NULL);
 	i = -1;
 	j = -1;

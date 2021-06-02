@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 13:43:59 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/20 10:44:39 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:32:38 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 {
-	size_t i;
+	size_t	i;
 
 	if (dest == '\0' || src == '\0')
 		return (0);

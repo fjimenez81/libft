@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/27 12:20:06 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/27 12:20:18 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:19:59 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	t_list *res;
+	t_list	*res;
 
 	res = *alst;
 	if (alst)

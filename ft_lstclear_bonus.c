@@ -6,7 +6,7 @@
 /*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/27 12:20:39 by fjimenez          #+#    #+#             */
-/*   Updated: 2019/11/27 12:20:49 by fjimenez         ###   ########.fr       */
+/*   Updated: 2021/06/02 10:20:20 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *res;
+	t_list	*res;
 
 	if (lst)
 	{
